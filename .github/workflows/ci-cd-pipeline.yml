@@ -31,9 +31,3 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/nodejs-app:latest
-
-      # Step 4: Deploy container to a server (e.g., AWS EC2, EKS, or similar)
-      - name: Deploy to server
-        run: |
-          echo "Deploying application..."
-          # Add deployment script or commands here
